@@ -1,0 +1,118 @@
+/* CSS untuk halaman Payment */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #8B0000; /* Warna merah tua */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #a52a2a; /* Warna merah yang lebih terang */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Menambahkan border-radius pada link */
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #a52a2a; /* Warna merah yang lebih terang */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.container h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #8B0000; /* Garis merah tua */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    /* Menambahkan outline yang halus saat elemen input atau textarea aktif */
+    outline: none;
+}
+
+.btn {
+    background-color: #8B0000; /* Warna merah tua */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #a52a2a; /* Warna merah yang lebih terang saat hover */
+}
+
+.btn:focus {
+    outline: none; /* Menghilangkan outline saat tombol aktif */
+}
+
+.error-message,
+.success-message {
+    color: inherit; /* Menggunakan warna teks yang diwariskan */
+    font-size: 0.9em;
+    margin-top: 5px;
+}
